@@ -17,7 +17,7 @@ public class BoolaBoola {
         
         int randomNum = (int)(Math.random() * 10 + 1); // randomize the value of randomNum
         
-        boolean one, two, three, statement; // initialize 4 booleans, 3 for the randomly generated statment and 1 for the overall answer
+        boolean one, two, three, statement=false; // initialize 4 booleans, 3 for the randomly generated statment and 1 for the overall answer
         
         String first, second, answer; // initialize 3 strings, 2 for the strings && and || in the randomly generated statement and 1 for the user's input
         
@@ -137,9 +137,3 @@ public class BoolaBoola {
     }
 }
 
-// notes:
-//
-// I keep getting an error saying that on lines 119 and 128, where I use the ternary statements with the boolean "statement," "statement" isn't
-// initialized. I went to test that by adding printlns to where I set the value of "statement" with if statements (lines 84-104), just to see if
-// there was a value being calculated for "statement". When I ran the program then, (by cntrl + x to lines 111-134: the only way it would compile w/o error)
-// either true or false would print for "statement", but when I pasted back in lines 111-134, I would get the same error message. HELP PLEASE.
